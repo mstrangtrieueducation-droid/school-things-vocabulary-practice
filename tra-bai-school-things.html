@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#d62d77">
-  <title>School things - Trả bài</title>
+  <title>FF2 - Unit 1: School things - Trả bài</title>
   <style>
     :root{--ink:#19202a;--muted:#68707d;--paper:#fff;--canvas:#f2f5f7;--line:#dce2e7;--pink:#d62d77;--pink2:#ad1758;--navy:#213c62}
     *{box-sizing:border-box}
@@ -13,9 +13,9 @@
     button{font:inherit;color:inherit}
     .shell{width:min(100%,920px);min-height:100vh;margin:auto;display:grid;grid-template-rows:auto 1fr}
     header{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 20px;background:#fff;border-bottom:1px solid var(--line)}
-    .brand{display:flex;align-items:center;gap:11px}
-    .mark{width:40px;height:40px;display:grid;place-items:center;border-radius:8px;background:var(--pink);color:#fff;font-weight:900}
-    h1{margin:0;font-size:20px;line-height:1}
+    .brand{min-width:0;display:flex;flex:1 1 auto;align-items:center;gap:11px}.brand>div{min-width:0}
+    .mark{width:40px;height:40px;flex:0 0 auto;display:grid;place-items:center;border-radius:8px;background:var(--pink);color:#fff;font-size:13px;font-weight:900}
+    h1{margin:0;font-size:20px;line-height:1.1}
     .sub{margin:4px 0 0;color:var(--pink2);font-size:11px;font-weight:800;text-transform:uppercase}
     .count{font-size:14px;color:var(--muted)}.count b{color:var(--ink);font-size:21px}
     main{min-height:0;padding:18px 20px 22px;display:grid;grid-template-rows:auto 1fr auto;gap:14px}
@@ -32,7 +32,7 @@
     .dots{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}.dots button{width:31px;height:31px;padding:0;border:1px solid #cbd3da;border-radius:5px;background:#fff;color:#6b7480;cursor:pointer;font-size:12px;font-weight:800}.dots button.on{border-color:var(--pink);background:var(--pink);color:#fff}
     button:focus-visible{outline:3px solid #f2ba10;outline-offset:3px}
     @media(max-width:600px){
-      header{padding:9px 13px}.mark{width:36px;height:36px}h1{font-size:17px}
+      header{padding:9px 13px}.mark{width:36px;height:36px;font-size:11px}h1{max-width:calc(100vw - 140px);font-size:14px;line-height:1.15}
       main{padding:12px 9px 17px;gap:10px}.stage{grid-template-columns:34px minmax(0,1fr) 34px;gap:4px}.nav{width:32px;height:48px;font-size:25px}
       .card{height:min(72vh,590px);min-height:420px}.picture{padding:10px;background-size:22px 22px}.prompt{min-height:125px}.letter{font-size:62px}
       .controls button{padding:8px 11px}.dots{gap:4px}.dots button{width:27px;height:27px}
@@ -42,7 +42,7 @@
 <body>
   <div class="shell">
     <header>
-      <div class="brand"><span class="mark">FF</span><div><h1>School things</h1><p class="sub">Trả bài từ vựng</p></div></div>
+      <div class="brand"><span class="mark">FF2</span><div><h1>Unit 1: School things</h1><p class="sub">Trả bài từ vựng</p></div></div>
       <div class="count"><b id="number">1</b> / 11</div>
     </header>
     <main>
